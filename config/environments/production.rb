@@ -101,4 +101,10 @@ Rails.application.configure do
   }
 
   config.action_mailer.default_url_options = { host: 'https://peaceful-inlet-77606.herokuapp.com/' }
+
+  config.paperclip_defaults = {
+      :storage => :s3,
+      :preserve_files => true,
+      :bucket => ENV['S3_BUCKET_NAME']
+  }
 end
