@@ -33,6 +33,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'aws-sdk-s3'
+gem 'stripe'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
