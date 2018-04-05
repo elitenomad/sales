@@ -2,7 +2,7 @@ class Sale < ApplicationRecord
   belongs_to :product
 
   before_save :populate_guid
-  validate_uniqueness_of :guid
+  validates_uniqueness_of :guid
 
   private
     def populate_guid
